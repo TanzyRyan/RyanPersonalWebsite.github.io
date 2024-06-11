@@ -177,13 +177,13 @@ window.addEventListener('scroll', function() {
 
 
 
+// fixed and parallax backgrounds dont work well on moblie so this feature has been disabled :(
 
 
+// window.addEventListener('scroll', function() {
+//     const parallax = document.getElementById('parallax');
+//     let scrollPosition = window.scrollY;
 
-window.addEventListener('scroll', function() {
-    const parallax = document.getElementById('parallax');
-    let scrollPosition = window.scrollY;
-
-    // Adjust the 'translateY' value to control the intensity of the parallax effect
-    parallax.style.transform = 'translateY(' + scrollPosition * 0.06 + 'px)';
-});
+//     // Adjust the 'translateY' value to control the intensity of the parallax effect
+//     parallax.style.transform = 'translateY(' + scrollPosition * 0.06 + 'px)';
+// });
