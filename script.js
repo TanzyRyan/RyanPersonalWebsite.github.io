@@ -178,13 +178,13 @@ window.addEventListener('scroll', function() {
 
 
 
+// disabled parallex as it doesnt work well on mobile
 
 
+// window.addEventListener('scroll', function() {
+//     const parallax = document.getElementById('parallax');
+//     let scrollPosition = window.scrollY;
 
-window.addEventListener('scroll', function() {
-    const parallax = document.getElementById('parallax');
-    let scrollPosition = window.scrollY;
-
-    // Adjust the 'translateY' value to control the intensity of the parallax effect
-    parallax.style.transform = 'translateY(' + scrollPosition * 0.06 + 'px)';
-});
+//     // Adjust the 'translateY' value to control the intensity of the parallax effect
+//     parallax.style.transform = 'translateY(' + scrollPosition * 0.06 + 'px)';
+// });
