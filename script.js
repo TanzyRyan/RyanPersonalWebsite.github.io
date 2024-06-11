@@ -94,25 +94,27 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Get all video elements
-    const videos = document.querySelectorAll('video');
+    // Get all GIF elements
+    const gifs = document.querySelectorAll('img');
 
-    // Function to reset video to beginning
-    function resetVideo(video) {
-        video.currentTime = 0;
+    // Function to reset GIF by reassigning the src
+    function resetGif(gif) {
+        const src = gif.src;
+        gif.src = '';  // Temporarily clear the src
+        gif.src = src; // Reassign the original src to restart the GIF
     }
 
-    // Create an IntersectionObserver instance for each video
-    videos.forEach(video => {
+    // Create an IntersectionObserver instance for each GIF
+    gifs.forEach(gif => {
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (!entry.isIntersecting) {
-                    resetVideo(video); // Reset the video to the beginning when it goes out of view
+                    resetGif(gif); // Reset the GIF to the beginning when it goes out of view
                 }
             });
         });
 
-        observer.observe(video);
+        observer.observe(gif);
     });
 });
 
