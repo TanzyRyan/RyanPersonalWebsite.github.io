@@ -1,5 +1,6 @@
 
-window.addEventListener('scroll', function() {
+// Function to handle scroll and touch events
+function handleScroll() {
     var sections = document.querySelectorAll('section');
     var navLinks = document.querySelectorAll('header nav a');
     var bottomOfPage = (window.innerHeight + window.scrollY) >= document.body.offsetHeight - 10; // Adjust the threshold if needed
@@ -28,7 +29,55 @@ window.addEventListener('scroll', function() {
         // Add 'active' class to the last navigation link
         navLinks[navLinks.length - 1].classList.add('active');
     }
-});
+}
+
+// Add event listeners for scroll and touch events
+window.addEventListener('scroll', handleScroll);
+window.addEventListener('touchmove', handleScroll);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// window.addEventListener('scroll', function() {
+//     var sections = document.querySelectorAll('section');
+//     var navLinks = document.querySelectorAll('header nav a');
+//     var bottomOfPage = (window.innerHeight + window.scrollY) >= document.body.offsetHeight - 10; // Adjust the threshold if needed
+
+//     sections.forEach(function(section) {
+//         var top = window.scrollY;
+//         var offset = section.offsetTop - 150; // Adjust offset if needed
+//         var height = section.offsetHeight;
+//         var id = section.getAttribute('id');
+
+//         if (top >= offset && top < offset + height) {
+//             // Remove 'active' class from all navigation links
+//             navLinks.forEach(function(link) {
+//                 link.classList.remove('active');
+//             });
+//             // Add 'active' class to the corresponding navigation link
+//             document.querySelector('header nav a[href="#' + id + '"]').classList.add('active');
+//         }
+//     });
+
+//     if (bottomOfPage) {
+//         // Remove 'active' class from all navigation links
+//         navLinks.forEach(function(link) {
+//             link.classList.remove('active');
+//         });
+//         // Add 'active' class to the last navigation link
+//         navLinks[navLinks.length - 1].classList.add('active');
+//     }
+// });
 
 
 
