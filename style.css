@@ -343,7 +343,7 @@ height: 120%; */
     flex-direction: column;
     display: flex;
     overflow: hidden;
-    background-color: rgb(5, 128, 205);;
+    background-color: rgb(5, 128, 205);
     align-items:center; 
     justify-content: center;
     text-align: center;
@@ -595,11 +595,9 @@ body.popup-open {
 
 .indi-experience-image {
     /* background-color: red; */
-    width: 15%;
-    min-width: 100px;
+    width: 13%;
+    min-width: 90px;
     height: auto;
-    max-width: 300px;
-    max-height: 300px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -638,7 +636,7 @@ body.popup-open {
 .indi-experience-company {
     font-size: 1.85rem;
     font-weight: 500;
-    color: rgb(19, 149, 255);
+    color: rgb(5, 128, 205);
     margin-bottom: 0.3rem;
     line-height: 2.2rem;
 
@@ -646,7 +644,7 @@ body.popup-open {
 
 .indi-experience-job {
     font-size: 1.4rem;
-    color: rgb(66, 201, 250);
+    color: rgb(50, 182, 230);
     margin-bottom: 0.3rem;
     font-weight: 500;
 }
@@ -761,7 +759,7 @@ body.popup-open {
 
 .indi-contact-icon {
     /* background-color: aqua; */
-    width: 100%;
+    width: 80%;
     height: auto;
     display: flex;
     justify-content: center;
@@ -769,7 +767,7 @@ body.popup-open {
 }
 
 .indi-contact-icon img {
-    height: 90%;
+    height: 100%;
     width: 40%;
 }
 
