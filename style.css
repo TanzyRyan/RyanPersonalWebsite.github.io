@@ -4,7 +4,7 @@
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    line-height: 1.56rem;
+    line-height: 1.55rem;
     font-weight: 300;
 }
 
@@ -19,7 +19,7 @@ body {
     justify-content: center;
     -webkit-text-size-adjust: 100%;
     overflow-x: hidden;
-    font-size: 1.125rem;
+    font-size: 1rem;
     color: rgb(212, 212, 212);
 }
 
@@ -180,15 +180,13 @@ height: 120%; */
     margin-bottom: 10px;
     color: white;
     line-height: 2.2rem;
-    font-size: 1.9rem
+    font-size: 1.9rem;
 }
 
 .inner-opener-textbox p {
     /* background-color: orange; */
     margin-top: 5px;
     margin-bottom: 5px;
-    /* font-size: 1.6rem;
-    line-height: 1.875rem; */
     color: rgb(212, 212, 212);
 }
 
@@ -329,7 +327,6 @@ height: 120%; */
     max-width: 350px;
     display: flex;
     flex-direction: column; 
-    /* padding: 10px; */
     margin: 10px 5px 10px 5px;
     border-radius: 5px;
     
@@ -490,13 +487,12 @@ body.popup-open {
 .popup-box h2 {
     font-weight: 500;
     margin: 13px 10px 13px 10px;
-    font-size: 1.125rem;
+    font-size: 1rem;
 }
 
 .popup-box p {
     margin-left: 10px;
     margin-right: 10px;
-    font-size: 1.125rem;
     margin-bottom: 10px;
 }
 
@@ -539,7 +535,6 @@ body.popup-open {
     margin-top: 5px;
     margin-bottom: 10px;
     font-weight: 500;
-    font-size: 1.125rem;
     text-align: center;
 }
 
@@ -549,7 +544,7 @@ body.popup-open {
 
                                       /*experience page */
 .experience-container {
-    background-color:white;
+    background-color:rgb(255, 255, 255);
     height: auto;
     display: flex;
     flex-direction: column;
@@ -559,6 +554,7 @@ body.popup-open {
     padding-bottom: 100px;
     padding-left: 15px;
     padding-right: 15px;
+    
 }
 
 
@@ -634,29 +630,30 @@ body.popup-open {
 
 
 .indi-experience-company {
-    font-size: 1.85rem;
+    font-size: 1.8rem;
     font-weight: 500;
     color: rgb(5, 128, 205);
     margin-bottom: 0.3rem;
-    line-height: 2.2rem;
+    line-height: 2rem;
 
 }
 
 .indi-experience-job {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     color: rgb(50, 182, 230);
     margin-bottom: 0.3rem;
     font-weight: 500;
 }
 
 .indi-experience-duration {
-    font-size: 1.125rem;
+    font-size: 1rem;
     font-weight: 400;
-    color: black;
+    color: #494949;
+    
 }
 
 .individual-experience p {
-    font-size: 1.125rem;
+    /* font-size: 1.125rem; */
     display: flex;
     /* background-color: #1277b5; */
     width: 100%;
@@ -774,7 +771,7 @@ body.popup-open {
 .indi-contact h1 {
     /* background-color: rgb(197, 171, 137); */
     width: 100%;
-    font-size: 1.55rem;
+    font-size: 1.4rem;
     text-align: center;
     margin-top: 0.625rem;
     font-weight: 500;
@@ -784,7 +781,7 @@ body.popup-open {
 .indi-contact p {
     /* background-color: rgb(174, 191, 112); */
     width: 100%;
-    font-size: 1.125rem;
+    font-size: 1rem;
     text-align: center;
     margin-top: 0.3rem;
     color: white;
