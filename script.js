@@ -1,4 +1,5 @@
 
+// for changing top header colour
 // Function to handle scroll and touch events
 function handleScroll() {
     var sections = document.querySelectorAll('section');
@@ -35,49 +36,6 @@ function handleScroll() {
 window.addEventListener('scroll', handleScroll);
 window.addEventListener('touchmove', handleScroll);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-// window.addEventListener('scroll', function() {
-//     var sections = document.querySelectorAll('section');
-//     var navLinks = document.querySelectorAll('header nav a');
-//     var bottomOfPage = (window.innerHeight + window.scrollY) >= document.body.offsetHeight - 10; // Adjust the threshold if needed
-
-//     sections.forEach(function(section) {
-//         var top = window.scrollY;
-//         var offset = section.offsetTop - 150; // Adjust offset if needed
-//         var height = section.offsetHeight;
-//         var id = section.getAttribute('id');
-
-//         if (top >= offset && top < offset + height) {
-//             // Remove 'active' class from all navigation links
-//             navLinks.forEach(function(link) {
-//                 link.classList.remove('active');
-//             });
-//             // Add 'active' class to the corresponding navigation link
-//             document.querySelector('header nav a[href="#' + id + '"]').classList.add('active');
-//         }
-//     });
-
-//     if (bottomOfPage) {
-//         // Remove 'active' class from all navigation links
-//         navLinks.forEach(function(link) {
-//             link.classList.remove('active');
-//         });
-//         // Add 'active' class to the last navigation link
-//         navLinks[navLinks.length - 1].classList.add('active');
-//     }
-// });
 
 
 
@@ -171,24 +129,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-// document.addEventListener('DOMContentLoaded', function() {
-//     const video = document.getElementById('video');
-
-//     const observer = new IntersectionObserver((entries) => {
-//         entries.forEach(entry => {
-//             if (!entry.isIntersecting) {
-//                 video.currentTime = 0; // Reset the video to the beginning
-//             }
-//         });
-//     });
-
-//     observer.observe(video);
-// });
-
-
-
-
-
 // Function to handle animation completion
 function handleAnimationEnd() {
     var bars = document.querySelectorAll('.bar-area');
@@ -223,16 +163,3 @@ window.addEventListener('scroll', function() {
         barArea.classList.toggle('off-screen', !isInViewport(bar));
     });
 });
-
-
-
-// fixed and parallax backgrounds dont work well on moblie so this feature has been disabled :(
-
-
-// window.addEventListener('scroll', function() {
-//     const parallax = document.getElementById('parallax');
-//     let scrollPosition = window.scrollY;
-
-//     // Adjust the 'translateY' value to control the intensity of the parallax effect
-//     parallax.style.transform = 'translateY(' + scrollPosition * 0.06 + 'px)';
-// });
