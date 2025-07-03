@@ -1,6 +1,9 @@
-# Personal Website
-I always wanted my own personal website and so why not make one as a first project? The purpose of this website was to give me a place to talk about my projects as well as a way to show off and document my credentials.
+# Ryan's (me) Personal Website
+A website dedicated for showcasing who I am, this includes past and current projects, work experience, extracurriculars, and a bit about me.
 
-Still quite a bit of improvements to be made especially accessibility as well as simplifying the JavaScript and CSS scripts
+## Description
+Developed a website only using HTML, CSS and JavaSccipt without using external frameworks such as React. The website is hosted on GitHub Pages for easy access and deployment and is publicly accessible. Here is the link for the website: https://tanzyryan.github.io/RyanPersonalWebsite.github.io/
 
-Hope you enjoy my website :)
+## Future Improvements
+Still quite a bit of improvements to be made especially accessibility as well as simplifying the JavaScript and CSS codebase. Additionally, new sections such as certifications and competitions are planned to be added.
+
